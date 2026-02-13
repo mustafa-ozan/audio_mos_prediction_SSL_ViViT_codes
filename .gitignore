@@ -1,0 +1,7 @@
+*.wav
+
+*.csv
+
+venv/
+
+.idea/
