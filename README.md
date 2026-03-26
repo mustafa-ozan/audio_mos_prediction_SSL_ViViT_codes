@@ -1,6 +1,5 @@
-This is a professional and structured README.md for your GitHub repository. It clearly separates the development environments, links to your live model on Hugging Face, and provides a clear section for your future academic citation.
-
 Audio MOS Prediction: SSL and ViViT Experiments
+
 This repository contains the source code, training pipelines, and feature extraction utilities developed for predicting Mean Opinion Score (MOS). The project explores advanced deep learning architectures, specifically focusing on Self-Supervised Learning (SSL) models like WavLM and Video Vision Transformers (ViViT) adapted for audio quality assessment.
 
 Our goal is to provide a comprehensive guide and codebase to assist researchers in the field of speech processing and audio quality evaluation.
