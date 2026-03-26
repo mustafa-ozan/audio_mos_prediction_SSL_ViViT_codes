@@ -1,59 +1,85 @@
-Audio MOS Prediction: SSL and ViViT Experiments
+<div align="center">
 
-This repository contains the source code, training pipelines, and feature extraction utilities developed for predicting Mean Opinion Score (MOS). The project explores advanced deep learning architectures, specifically focusing on Self-Supervised Learning (SSL) models like WavLM and Video Vision Transformers (ViViT) adapted for audio quality assessment.
+# 🎙️ Audio-MOS-Prediction-SSL-ViViT
 
-Our goal is to provide a comprehensive guide and codebase to assist researchers in the field of speech processing and audio quality evaluation.
+### A Research-Oriented Toolkit for Subjective Speech Quality Assessment (SSQA)
 
-🚀 Live Predictor
-For those looking to use the pre-trained model directly without setting up the training environment, we have released a "plug-and-play" version here:
-👉 Hugging Face: WavLM-Transformer-MOS-English
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange)](https://huggingface.co/mustafa-ozan-duman/wavlm-transformer-mos-english)
 
-📂 Repository Structure
-The project is divided into two main sections based on the workflow used during research:
+**Benchmarking the Generalization Abilities of WavLM and ViViT for MOS Prediction**
 
-1. laptop_codes/ (Local Environment)
-Contains production-level scripts for final model training and high-performance inference.
+</div>
 
-model.py & dataset.py: The core architecture and data handling logic.
+---
 
-train_SSL_frozen.py: Optimized script for training with frozen SSL backbones.
+* **MOS-Prediction** is a benchmark designed to evaluate how well self-supervised learning (SSL) models perceive audio quality as humans do.
+* **SSL-ViViT Framework** stands for the **S**peech **S**elf-supervised **L**earning and **Vi**sual **Vi**deo **T**ransformer toolkit, designed for advanced MOS estimation research.
 
-requirements.txt: Complete environment specification for local reproduction.
+📚 [Full Documentation (Coming Soon)](#) | 📄 [arXiv Paper (2026)](#) | 🤗 [Hugging Face Space Demo](https://huggingface.co/mustafa-ozan-duman/wavlm-transformer-mos-english)
 
-2. colab_codes/ (Cloud/Experimental)
-Contains Jupyter notebooks used for initial feature engineering and cloud-based experimentation.
+---
 
-MFCC_EXTRACTOR.ipynb: Comprehensive guide for extracting MFCC features for baseline studies.
+## 🔍 Overview
 
-SSL_Transformer.ipynb: Experiments involving SSL-based feature aggregation.
+This repository provides the complete experimental codebase for feature extraction and model training. The project compares traditional acoustic features (MFCC) with state-of-the-art SSL features (WavLM) to find the most effective representation for human-like speech quality perception.
 
-ViViT_Transformer.ipynb: Novel adaptation of Vision Transformers for audio spectrogram analysis.
+* **Key Models:** WavLM-Transformer, ViViT-Audio-Regressor.
+* **Objective:** High-accuracy MOS prediction on a 1.0 - 5.0 scale.
+* **Research Phase:** Developed during PhD candidacy at Bursa Uludag University.
 
-🛠️ Getting Started
-Local Setup
-To run the training scripts on your local machine:
+---
 
-Clone the repository:
+## 📂 Repository Structure
+
+The project is organized by execution environment to ensure reproducibility across local and cloud platforms:
+
+| Directory | Description |
+| :--- | :--- |
+| [**`laptop_codes/`**](./laptop_codes/) | **Production Core:** Python scripts for local training, dataset handling, and batch inference. |
+| [**`colab_codes/`**](./colab_codes/) | **Experimental Lab:** Jupyter Notebooks for MFCC extraction, ViViT adaptations, and SSL trials. |
+
+---
+
+## 🛠️ Usage Guide
+
+### 1. Environment Setup
+The project is built on **Python 3.12**. To set up your local environment:
+```bash
+# Clone the repository
+git clone [https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes.git](https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes.git)
+cd audio_mos_prediction_SSL_ViViT_codes/laptop_codes
+
+# Install dependencies
+pip install -r requirements.txt
+2. Batch MOS Label Generation
+To generate quality labels for a directory of audio files using the pre-trained WavLM-Transformer:
 
 Bash
-git clone https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes.git
-Set up your environment using the provided requirements:
+python predict_folder.py --dir /path/to/your/wav_files --out mos_results.csv
+📈 Benchmarking Results
+See our Evaluation Logs for detailed performance metrics across various test sets.
 
-Bash
-pip install -r laptop_codes/requirements.txt
-Hardware Recommendations
-Python: 3.12
+March 2026: Achieved SOTA results on English-only MOS sets using WavLM-Base.
 
-GPU: NVIDIA RTX series (e.g., 5070 Ti) is recommended for training, though the inference scripts support CPU execution.
+February 2026: Released the first iteration of the ViViT-Transformer for audio spectrograms.
 
-📚 Reference & Citation
-If you find this codebase or the trained model helpful for your research, please cite our work:
+📝 Citation
+If you find this benchmark or the provided scripts helpful for your research, please cite our study:
 
-Mustafa Ozan Duman, Bursa Uludag University, Computer Engineering Department.
-[Insert Article Title Here]
-[Insert Journal/Conference Name, Year]
-Link: [Link to Article/DOI]
+Kod snippet'i
+@article{duman2026audio,
+  title={Audio MOS Prediction using SSL-based Transformers and ViViT adaptation},
+  author={Duman, Mustafa Ozan},
+  journal={Bursa Uludag University Computer Engineering Research},
+  year={2026},
+  url={[https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes](https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes)}
+}
+<div align="center">
 
-License: Apache 2.0
+Mustafa Ozan Duman Research Assistant, Bursa Uludag University
 
-Affiliation: Bursa Uludag University, Computer Engineering Department.
+Computer Engineering Department, Turkey
+
+</div>
