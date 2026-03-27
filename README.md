@@ -12,12 +12,7 @@
 
 </div>
 
----
-
-* **MOS-Prediction** is a benchmark designed to evaluate how well self-supervised learning (SSL) models perceive audio quality as humans do.
-* **SSL-ViViT Framework** stands for the **S**peech **S**elf-supervised **L**earning and **Vi**sual **Vi**deo **T**ransformer toolkit, designed for advanced MOS estimation research.
-
-📚 [Full Documentation (Coming Soon)](#) | 📄 [arXiv Paper (2026)](#) | 🤗 [Hugging Face Space Demo](https://huggingface.co/mustafa-ozan-duman/wavlm-transformer-mos-english)
+📄 [arXiv Paper (2026)](#)
 
 ---
 
@@ -41,29 +36,6 @@ The project is organized by execution environment to ensure reproducibility acro
 | [**`colab_codes/`**](./colab_codes/) | **Experimental Lab:** Jupyter Notebooks for MFCC extraction, ViViT adaptations, and SSL trials. |
 
 ---
-
-## 🛠️ Usage Guide
-
-### 1. Environment Setup
-The project is built on **Python 3.12**. To set up your local environment:
-```bash
-# Clone the repository
-git clone [https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes.git](https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes.git)
-cd audio_mos_prediction_SSL_ViViT_codes/laptop_codes
-
-# Install dependencies
-pip install -r requirements.txt
-2. Batch MOS Label Generation
-To generate quality labels for a directory of audio files using the pre-trained WavLM-Transformer:
-
-Bash
-python predict_folder.py --dir /path/to/your/wav_files --out mos_results.csv
-📈 Benchmarking Results
-See our Evaluation Logs for detailed performance metrics across various test sets.
-
-March 2026: Achieved SOTA results on English-only MOS sets using WavLM-Base.
-
-February 2026: Released the first iteration of the ViViT-Transformer for audio spectrograms.
 
 📝 Citation
 If you find this benchmark or the provided scripts helpful for your research, please cite our study:
