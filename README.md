@@ -11,9 +11,6 @@
 **Benchmarking the Generalization Abilities of WavLM and ViViT for MOS Prediction**
 
 </div>
-
-📄 [arXiv Paper (2026)](#)
-
 ---
 
 ## 🔍 Overview
