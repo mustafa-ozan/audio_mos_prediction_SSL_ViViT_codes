@@ -7,7 +7,7 @@
 
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![arXiv](https://shields.io)](https://arxiv.org/abs/2607.10146)
+[![arXiv](https://img.shields.io/badge/arXiv-2607.10146-B31B1B.svg)](https://arxiv.org/abs/2607.10146)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange)](https://huggingface.co/mustafa-ozan-duman/wavlm-transformer-mos-english)
 
 
