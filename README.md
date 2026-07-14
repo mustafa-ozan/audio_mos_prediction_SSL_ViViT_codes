@@ -4,13 +4,15 @@
 
 ### A Research-Oriented Toolkit for Subjective Speech Quality Assessment (SSQA)
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange)](https://huggingface.co/mustafa-ozan-duman/wavlm-transformer-mos-english)
+[![Python 3.12](https://shields.io)](https://python.org)
+[![License](https://shields.io)](https://opensource.org)
+[![arXiv](https://shields.io)](https://doi.org)
+[![HuggingFace](https://shields.io)](https://huggingface.co)
 
 **Benchmarking the Generalization Abilities of WavLM and ViViT for MOS Prediction**
 
 </div>
+
 ---
 
 ## 🔍 Overview
@@ -34,21 +36,27 @@ The project is organized by execution environment to ensure reproducibility acro
 
 ---
 
-📝 Citation
+## 📝 Citation
+
 If you find this benchmark or the provided scripts helpful for your research, please cite our study:
 
-Kod snippet'i
+```bibtex
 @article{duman2026audio,
   title={Audio MOS Prediction using SSL-based Transformers and ViViT adaptation},
   author={Duman, Mustafa Ozan},
-  journal={Bursa Uludag University Computer Engineering Research},
+  journal={arXiv preprint arXiv:2607.10146},
   year={2026},
-  url={[https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes](https://github.com/mustafa-ozan/audio_mos_prediction_SSL_ViViT_codes)}
+  eprint={2607.10146},
+  archivePrefix={arXiv},
+  primaryClass={eess.AS},
+  url={https://doi.org}
 }
+```
+
 <div align="center">
 
-Mustafa Ozan Duman Research Assistant, Bursa Uludag University
-
-Computer Engineering Department, Turkey
+**Mustafa Ozan Duman**  
+Research Assistant, Bursa Uludag University  
+Computer Engineering Department, Turkey  
 
 </div>
